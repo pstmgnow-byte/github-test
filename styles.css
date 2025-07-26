@@ -207,7 +207,7 @@
   outline: none;                 
 }
 
-.site-nav .nav-link:focus-visible { /* adds focus styles */
+.site-nav .nav-link:focus-visible { /* will add focus styles */
   outline: 3px solid #000000;     
   outline-offset: 2px;
 }

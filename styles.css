@@ -1,12 +1,12 @@
 body {
-  background-color: rgb(106, 139, 106);
+  background-color: rgb(106, 139, 106); /* Sets the background color */
 }
 
 h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); /* Sets the color of the main heading */
 }
 
-.site-header {
+.site-header { /* Header section with logo, site title, and navigation bar */
   background-color: #d0cfcf;
   padding: 20px;
   display: flex;
@@ -16,23 +16,23 @@ h1 {
   align-items: flex-end;
 }
 
-.branding {
+.branding { /* Contains the logo and site title */
   display: flex;
   align-items: center;
 }
 
-.company-name {
+.company-name { /* Styles the company name */
   font-size: 24px;
   font-weight: bold;
 }
 
-.logo {
+.logo { /* Styles the logo image */
   width: 100px;
   height: 100px;
   margin-right: 15px;
 }
 
-.site-nav .nav-link {
+.site-nav .nav-link { /* Styles the navigation links */
   margin-left: 10px;
   align-items: center;
   padding: 8px 16px;
@@ -44,30 +44,30 @@ h1 {
   font-size: 24px;
 }
 
-.hero-banner {
+.hero-banner { /* Hero section with background image and text */
   background-image: url(images/Nature\ Background.webp);
   background-size: cover;
   text-align: center;
   padding: 40px 20px; 
 }
 
-.hero-banner h2 {
+.hero-banner h2 { /* Main heading in the hero section */
   font-size: 65px;
   color: rgb(0, 0, 0);
-  font-weight: bold; /*comment sup*/
+  font-weight: bold; 
   margin: 0;
-  -webkit-text-stroke: 1.5px rgb(0, 0, 0); /* adds an outline */
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0); 
   
 }
 
-.hero-banner p {
+.hero-banner p { /* Subheading in the hero section */
   margin-top: 10px;
   font-size: 30px;
   color: #000000;
   -webkit-text-stroke: 1.5px rgb(0, 0, 0); /* adds an outline */
 }
 
-.content {
+.content { /* Main content area with information and images */
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -78,7 +78,7 @@ h1 {
 }
 
 
-.info-text {
+.info-text { /* Text section with information about native birds */
   flex: 1;
   background-color: #0d280a;
   color: white;
@@ -87,7 +87,7 @@ h1 {
   font-size: 18px;
 }
 
-.info-image {
+.info-image { /* Image section with a picture of native birds */
   flex: 1;
   background-color: #092c0b;
   padding: 20px;
@@ -98,9 +98,52 @@ h1 {
 }
 
 
-.info-image img {
+.info-image img { /* Styles the image of native birds */
   width: 100%;
   height: 100%;
   object-fit: cover; 
   border-radius: 4px;
 }
+
+.grid-container { /* Grid layout for displaying information about native birds */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid-item { /* Styles each grid item */
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-image { /* Styles the images in the grid */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.grid-item h3 { /* Styles the headings in the grid items */
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.subheading { /* Styles the subheadings in the grid items */
+  font-weight: bold;
+  display: block;
+  font-size: 18px;
+}
+
+.footer { /* Footer section so I can share information about sources */
+  background-color: #d0cfcf;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
